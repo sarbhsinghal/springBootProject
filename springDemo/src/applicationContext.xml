@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" default-init-method="harshit" default-destroy-method="shukla">  
+ 
+        
+<bean id="shape" class="springDemo.Shape" >
+<property name="s" ref="square"></property>
+</bean>
+<bean id="square" class="springDemo.Square">
+<property name="size1" value="30"></property>
+</bean>
+
+
+               
+ </beans>
